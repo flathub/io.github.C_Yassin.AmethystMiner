@@ -20,6 +20,9 @@ cleanup:
   - /share/fish
   - /share/man
   - /share/zsh
+  - /share/amethystminer/gui/AmethystMiner.desktop
+  - /share/amethystminer/core/WinRing0x64.sys
+  - /share/amethystminer/core/xmrig.exe
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
 modules:
@@ -73,4 +76,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/C-Yassin/AmethystMiner
-        commit: bb247cb82650a798ef186e401fa2beb5af7401af
+        commit: 8980c84ab7dd0a4dea547a72ebe599ab7c9bf9fc
