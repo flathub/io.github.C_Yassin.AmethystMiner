@@ -20,6 +20,9 @@ cleanup:
   - /share/fish
   - /share/man
   - /share/zsh
+  - /share/amethystminer/gui/AmethystMiner.desktop
+  - /share/amethystminer/core/WinRing0x64.sys
+  - /share/amethystminer/core/xmrig.exe
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
 modules:
@@ -67,10 +70,10 @@ modules:
 
       - install -D -m 755 config/start-amethyst /app/bin/start-amethyst
       
-      - install -Dm644 io.github.C_Yassin.AmethystMiner.metainfo.xml /app/share/metainfo/io.github.C_Yassin.AmethystMiner.metainfo.xml
+      - install -Dm644 gui/io.github.C_Yassin.AmethystMiner.metainfo.xml /app/share/metainfo/io.github.C_Yassin.AmethystMiner.metainfo.xml
       - install -Dm644 gui/io.github.C_Yassin.AmethystMiner.desktop /app/share/applications/io.github.C_Yassin.AmethystMiner.desktop
       - install -Dm644 gui/amethyst.svg /app/share/icons/hicolor/scalable/apps/io.github.C_Yassin.AmethystMiner.svg
     sources:
       - type: git
         url: https://github.com/C-Yassin/AmethystMiner
-        commit: bb247cb82650a798ef186e401fa2beb5af7401af
+        commit: fa0044f0db3a7c297b233bc7450efc751afe564c
