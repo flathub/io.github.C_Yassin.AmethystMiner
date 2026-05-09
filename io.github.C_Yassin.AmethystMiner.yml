@@ -25,6 +25,9 @@ cleanup:
   - /share/amethystminer/core/xmrig.exe
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
+build-options:
+  env:
+    - BASEAPP_REMOVE_WEBENGINE=1
 modules:
   - name: hwloc
     buildsystem: autotools
@@ -76,4 +79,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/C-Yassin/AmethystMiner
-        commit: fa0044f0db3a7c297b233bc7450efc751afe564c
+        commit: 6e43f1b73cb3cbad399774a0b5d36cd570a2db38
