@@ -75,8 +75,8 @@ modules:
       
       - install -Dm644 gui/io.github.C_Yassin.AmethystMiner.metainfo.xml /app/share/metainfo/io.github.C_Yassin.AmethystMiner.metainfo.xml
       - install -Dm644 gui/io.github.C_Yassin.AmethystMiner.desktop /app/share/applications/io.github.C_Yassin.AmethystMiner.desktop
-      - install -Dm644 gui/amethyst.svg /app/share/icons/hicolor/scalable/apps/io.github.C_Yassin.AmethystMiner.svg
+      - install -Dm644 gui/amethyst-flatpak-icon.svg /app/share/icons/hicolor/scalable/apps/io.github.C_Yassin.AmethystMiner.svg
     sources:
       - type: git
         url: https://github.com/C-Yassin/AmethystMiner
-        commit: 6e43f1b73cb3cbad399774a0b5d36cd570a2db38
+        commit: c5ff213a3d5f628d362f87303ac3133288c99ac8
