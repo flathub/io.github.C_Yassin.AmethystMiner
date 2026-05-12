@@ -68,10 +68,10 @@ modules:
   - name: amethyst-miner
     buildsystem: simple
     build-commands:
-      - mkdir -p /app/share/amethyst
-      - cp -r * /app/share/amethyst/
+      - mkdir -p /app/share/amethystminer
+      - cp -r * /app/share/amethystminer/
 
-      - install -D -m 755 config/start-amethyst /app/bin/start-amethyst
+      - install -D -m 755 config/start-flatpak-amethyst /app/bin/start-amethyst
       
       - install -Dm644 gui/io.github.C_Yassin.AmethystMiner.metainfo.xml /app/share/metainfo/io.github.C_Yassin.AmethystMiner.metainfo.xml
       - install -Dm644 gui/io.github.C_Yassin.AmethystMiner.desktop /app/share/applications/io.github.C_Yassin.AmethystMiner.desktop
@@ -79,4 +79,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/C-Yassin/AmethystMiner
-        commit: c5ff213a3d5f628d362f87303ac3133288c99ac8
+        commit: 4574862c2e701d858fcf42e8eb6ea0fdceb56baa
