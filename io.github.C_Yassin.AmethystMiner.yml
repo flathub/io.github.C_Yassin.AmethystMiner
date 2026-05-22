@@ -79,4 +79,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/C-Yassin/AmethystMiner
-        commit: 4574862c2e701d858fcf42e8eb6ea0fdceb56baa
+        commit: e7df310d52b7918503d42531a0d94bb78fecbb74
