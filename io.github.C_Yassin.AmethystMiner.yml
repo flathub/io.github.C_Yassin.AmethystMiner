@@ -12,7 +12,6 @@ finish-args:
   - --device=dri
   - --share=network
   - --talk-name=org.kde.StatusNotifierWatcher
-  - --talk-name=org.freedesktop.Flatpak
 cleanup:
   - /include
   - /lib/pkgconfig
@@ -80,4 +79,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/C-Yassin/AmethystMiner
-        commit: df2ded3c5bbbc20be12a61f7b8d558c962adf6a4
+        commit: e3af05800dc58467595be0975fbd5fba0699fcbc
